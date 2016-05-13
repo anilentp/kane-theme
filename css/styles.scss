@@ -1,0 +1,45 @@
+nav{
+	background-color: $bg-green;
+	height: 95px;
+	padding-top: 1%;
+}
+.bg-img1{
+	background-image: url(../img/carousel-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 500px;
+	max-height: 100%;
+	color:$white;
+	text-align: center;
+	padding: 3% 0;
+}
+.titlebg{
+	margin-top: 5%;
+}
+.sb{
+	width: 150px;
+	color: black;
+	border-bottom: solid 2px black;
+}
+@mixin caja ($color){
+	height: 90px;
+	width: 150px;
+	display: inline-block;
+	background-color: $color;
+	margin: 1%;
+	text-align: center;
+	&:hover{
+		background-color: darken ($color 80%);
+	}
+
+}
+.caja1{@include caja(#69D2E7); }
+.caja2{@include caja (#A7DBDB) }
+.caja3{@include caja (#E0E4CC) }
+.caja4{@include caja (#F38630) }
+.caja5{@include caja (#FA6900) }
+.caja6{@include caja (#E94C6F) }
+.caja7{@include caja (#542733); color:white;}
+.caja8{@include caja (#69D2E7) }
+.caja9{@include caja (#69D2E7) }
+.caja10{@include caja (#69D2E7) }
